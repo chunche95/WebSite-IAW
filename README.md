@@ -7,4 +7,4 @@ ASIR. <br>
 
 @Author: @Pauchino
 <br>
-<img src="https://raw.githubusercontent.com/chunche95/WebSite-IAW/master/IAW/images/logotipo.png"> [HumanComputing 3.0](https://raw.githubusercontent.com/chunche95/WebSite-IAW/master/IAW/images/logotipo.png)
+<img src="https://raw.githubusercontent.com/chunche95/WebSite-IAW/master/IAW/images/logotipo.png"> 
