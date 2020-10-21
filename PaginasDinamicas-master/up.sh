@@ -11,8 +11,8 @@ echo "------------------------------------------"
 echo "		Subiendo cambios		"
 echo "------------------------------------------"
 echo ""
-git add  index.*
-git nota "Principal page of the quiz game project"
+git add  index.html
+git nota "Principal page of  project"
 git sube
 echo "-------------------------------------------"
 echo ""
@@ -52,4 +52,3 @@ echo "				█║▌│█│║▌║││█║▌║▌║█║▌│█"
 echo "			_________________________________"
 echo ""
 sleep 4
-clear
