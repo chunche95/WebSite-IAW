@@ -2810,7 +2810,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 2em 0 0.1em 0 ;
 	}
 
 		#header .logo {
@@ -3132,7 +3132,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		padding: 0em 0 6em 0 ;
+		padding: 0em 0 3em 0 ;
+		
 	}
 
 		@media screen and (max-width: 736px) {
@@ -3146,8 +3147,9 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 0em 0 1em 0 ;
 		background-color: #f6f6f6;
+		opacity: 0.5;
 	}
 
 		#footer > .inner {
@@ -3170,19 +3172,19 @@ input, select, textarea {
 			}
 
 			#footer > .inner section:nth-child(1) {
-				width: calc(66% - 2.5em);
-				margin-right: 2.5em;
+				width: calc(6% - 2.5em);
+				margin-right: 0.5em;
 			}
 
 			#footer > .inner section:nth-child(2) {
-				width: calc(33% - 2.5em);
-				margin-left: 2.5em;
+				width: calc(3% - 2.5em);
+				margin-left: 0.5em;
 			}
 
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
-				margin-top: 5em;
+				margin-top: 0.5em;
 				list-style: none;
 				font-size: 0.8em;
 				color: rgba(88, 88, 88, 0.5);
