@@ -1,74 +1,6 @@
-<!DOCTYPE html>
-<html lang="<?php echo SITE_LANG; ?>">
-<head>
-  <!-- Agregar basepath para definir a partir de donde se deben generar los enlaces y la carga de archivos -->
-  <base href="<?php echo BASEPATH; ?>">
+<?php require_once INCLUDES.'inc_header.php'; ?>
+<?php require_once INCLUDES.'inc_navbar.php'; ?>
 
-  <meta charset="UTF-8">
-  
-  <title><?php echo isset($d->title) ? $d->title.' - '.get_sitename() : 'Bienvenido - '.get_sitename(); ?></title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
-  <!-- Custom styles for this template -->
-  <link href="<?php echo CSS.'form-validation.css'; ?>" rel="stylesheet">
-
-  <!-- Toastr css -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
-  <!-- Waitme css -->
-  <link rel="stylesheet" href="<?php echo PLUGINS.'waitme/waitMe.min.css'; ?>">
-
-  <style>
-    .btn {
-      border-radius: 2px;
-    }
-
-    .bg-gradient {
-      background: rgba(38, 38, 38, 1);
-      background: -moz-linear-gradient(left, rgba(38, 38, 38, 1) 0%, rgba(28, 33, 28, 1) 100%);
-      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(38, 38, 38, 1)), color-stop(100%, rgba(28, 33, 28, 1)));
-      background: -webkit-linear-gradient(left, rgba(38, 38, 38, 1) 0%, rgba(28, 33, 28, 1) 100%);
-      background: -o-linear-gradient(left, rgba(38, 38, 38, 1) 0%, rgba(28, 33, 28, 1) 100%);
-      background: -ms-linear-gradient(left, rgba(38, 38, 38, 1) 0%, rgba(28, 33, 28, 1) 100%);
-      background: linear-gradient(to right, rgba(38, 38, 38, 1) 0%, rgba(28, 33, 28, 1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#262626', endColorstr='#1c211c', GradientType=1);
-    }
-
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-</head>
-<body class="bg-light">
-
-  <!-- Navbar -->
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <h5 class="my-0 mr-md-auto font-weight-normal"><a href="<?php echo URL; ?>"><img src="<?php echo IMAGES.'logo_150.png'; ?>" alt="Yumi" class="img-fluid" style="width: 70px;"></a></h5>
-    <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="consultas/agendar">Agendar consulta</a>
-      <a class="p-2 text-dark" href="pacientes">Pacientes</a>
-      <a class="btn btn-success" href="login">Ingresar</a>
-      <a class="btn btn-outline-danger" href="logout">Cerrar sesión</a>
-    </nav>
-  </div>
-  <!-- ends navbar -->
 
   <!-- Formulario y contenido -->
   <div class="container">
@@ -282,10 +214,5 @@
     </div>
   </div>
   <!-- ends contenido -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+  
+<?php require_once INCLUDES.'inc_footer.php'; ?>

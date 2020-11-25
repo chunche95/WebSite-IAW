@@ -60,7 +60,7 @@ define('UPLOADS'    , ROOT.DS.'assets'.DS.'uploads'.DS);
 // Set para conexión local o de desarrollo
 define('LDB_ENGINE' , 'mysql');
 define('LDB_HOST'   , 'localhost');
-define('LDB_NAME'   , '__LOCAL_DB__');
+define('LDB_NAME'   , 'db_yumi');
 define('LDB_USER'   , 'root');
 define('LDB_PASS'   , '');
 define('LDB_CHARSET', 'utf8');

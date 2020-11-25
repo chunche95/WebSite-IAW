@@ -12,7 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
   <!-- Custom styles for this template -->
@@ -56,6 +56,6 @@
     }
   </style>
 </head>
+<body class="bg-light">
 
-<body class="<?php echo isset($d->bg) && $d->bg === 'dark' ? 'bg-gradient' : 'bg-light' ?>" style="<?php echo 'padding: '.(isset($d->padding) ? $d->padding : '200px 0px'); ?>">
 <!-- ends inc_header.php -->
