@@ -23,5 +23,6 @@
     #BEE #FRAMEWORK #POO
     Patrón de desarrollo #MVC
     
+    @chunche95
     @pauchino09
     Paulino Esteban Bermúdez R.
