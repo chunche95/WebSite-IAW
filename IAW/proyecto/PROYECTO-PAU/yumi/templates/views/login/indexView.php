@@ -4,7 +4,7 @@
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="<?php echo IMAGES.'hc3.PNG' ?>" alt="<?php echo get_sitename() ?>" width="150">
     <h2>Ingresa a tu cuenta</h2>
-    <p class="lead">Zona de login para trabajadores de HC3 services.</p>
+    <p class="lead">Zona de login para trabajadores de HC3 medical services.</p>
   </div>
 
   <div class="row">

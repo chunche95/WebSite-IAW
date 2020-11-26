@@ -11,7 +11,7 @@ class pacientesController extends Controller {
   function index() {
     $data = [ 
       'title' => 'Todos los pacientes.', 
-      'pacientes' => pacienteModel::list('pacientes' => 0)
+      'pacientes' => pacienteModel::list('pacientes' => 0);
     ]
     View::render('index');
   }

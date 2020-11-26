@@ -67,7 +67,7 @@ class homeController extends Controller {
   function email()
   {
     try {
-      $email   = 'localhost@localhost.com';
+      $email   = 'pruebasdemo20@gmail.com';
       $subject = 'El asunto del correo';
       $body    = 'El cuerpo del mensaje, puede ser html o texto plano.';
       $alt     = 'El texto corto del correo, preview del contenido.';

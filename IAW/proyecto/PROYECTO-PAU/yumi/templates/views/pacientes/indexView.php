@@ -26,42 +26,30 @@
             <th></th>
             </thead>
             <tbody>
-            <tr>
-                <td>012032</td>
-                <td>Pancho Doe</td>
-                <td>Masculino</td>
-                <td>12 de Agosto</td>
-                <td>Revisado</td>
-                <td>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
-                    <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#"><i class="fas fa-eye"></i> Ver</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-laptop-medical"></i> Revisar</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-check"></i> Terminado</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Borrar</a>
-                    </div>
-                </div>
-                </td>
-            </tr>
-            <tr>
-                <td>856322</td>
-                <td>María Doe</td>
-                <td>Femenino</td>
-                <td>12 de Agosto</td>
-                <td>Pendiente</td>
-                <td>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
-                    <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#"><i class="fas fa-eye"></i> Ver</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-laptop-medical"></i> Revisar</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-check"></i> Terminado</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Borrar</a>
-                    </div>
-                </div>
-                </td>
-            </tr>
+                <tr>
+                <?php foreach ($d -> pacientes as $p): ?>
+                    <tr>
+                        <td><?php echo $p->numero; ?></td>
+                        <td><?php echo $p->nombre_completo; ?></td>
+                        <td><?php echo $p->sexo; ?></td>
+                        <td><?php echo format_date($p->fecha); ?></td>
+                        <td><?php echo $p->status; ?></td>
+                    </tr> 
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="<?php echo sprintf('pacientes/ver/%s', $p->id); ?>"><i class="fas fa-eye"></i> Ver</a>
+                            <?php if ($p-> status === 'pendiente'):?>
+                            <a class="dropdown-item" href="<?php echo sprintf('pacientes/revisar/%s', $p->id); ?>"><i class="fas fa-laptop-medical"></i> Revisar</a>
+                            <?php elseif ($p-> status === 'revisado'):?>
+                            <a class="dropdown-item" href="<?php echo sprintf('pacientes/terminar/%s', $p->id); ?>"><i class="fas fa-check"></i> Terminado</a>
+                            <?php endif;?>
+                            <a class="dropdown-item" href="<?php echo sprintf('pacientes/borrar/%s', $p->id); ?>"><i class="fas fa-trash"></i> Borrar</a>
+                        </div>
+                    </td>
+                </tr>
+           
             </tbody>
         </table>
         </div>
