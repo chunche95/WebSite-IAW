@@ -3,10 +3,17 @@
 class pacientesController extends Controller {
   function __construct()
   {
+    if(!Auth::validate()){
+      Redirect::to('login');
+    }
   }
   
   function index() {
-   View::render('index');
+    $data = [ 
+      'title' => 'Todos los pacientes.', 
+      'pacientes' => pacienteModel::list('pacientes' => 0)
+    ]
+    View::render('index');
   }
 
   function ver($id){

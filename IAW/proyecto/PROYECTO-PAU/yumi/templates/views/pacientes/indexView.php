@@ -10,7 +10,13 @@
     <div class="card">
         <div class="card-header">Lista de pacientes</div>
         <div class="card-body table-responsive">
+        <div class="table-responsive">
+         <?php if ( empty($d -> pacientes)): ?>
+            <div class="text-center">
+                <img src="<?php echo IMAGES.'yumi_empty.png'; ?>" alt="No hay registros" class="imf-fluid py-5" style="width: 150px">
+            </div>
         <table class="table table-hover table-striped table-borderless">
+        </div>            
             <thead>
             <th>Número</th>
             <th>Nombre completo</th>

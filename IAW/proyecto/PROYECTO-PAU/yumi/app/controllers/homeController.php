@@ -33,7 +33,7 @@ class homeController extends Controller {
       $registro =
       [
         'name'       => 'Steve',
-        'email'      => 'pruebasdemo20@gmail.com',
+        'email'      => 'localhost@localhost.com',
         'created_at' => now()
       ];
       //$id = Db::query($sql, $registro);
@@ -67,7 +67,7 @@ class homeController extends Controller {
   function email()
   {
     try {
-      $email   = 'chunche95@localhost.com';
+      $email   = 'localhost@localhost.com';
       $subject = 'El asunto del correo';
       $body    = 'El cuerpo del mensaje, puede ser html o texto plano.';
       $alt     = 'El texto corto del correo, preview del contenido.';

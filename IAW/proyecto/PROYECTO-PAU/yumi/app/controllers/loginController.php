@@ -27,17 +27,24 @@ class loginController extends Controller {
       Redirect::back();
     }
 
-    $def_id       = 123;
+/*    $def_id       = 123;
     $def_user     = 'bee';
     $def_password = '123456';
-
-    if (clean($_POST['usuario']) !== $def_user || clean($_POST['password']) !== $def_password) {
+*/
+    if($usuario = usuarioModel::list('usuario', ['usuario' => clean($_POST['usuario']), 'password' => clean['password'], 1])){
       Flasher::new('Las credenciales no son correctas.', 'danger');
       Redirect::back();
+    }else{
+      // Loggear al usuario
+      Auth::login($usuario['id'], $usuario);
+      Redirect::to('pacientes');
     }
 
-    // Loggear al usuario
-    Auth::login($def_id, ['name' => 'Bee Joystick', 'email' => 'hellow@joystick.com.mx', 'avatar' => 'myavatar.jpg', 'tel' => '11223344', 'color' => '#112233']);
-    Redirect::to('home/flash');
+    // if (clean($_POST['usuario']) !== $def_user || clean($_POST['password']) !== $def_password) {
+    //   Flasher::new('Las credenciales no son correctas.', 'danger');
+    //   Redirect::back();
+    // }
+
+    
   }
 }

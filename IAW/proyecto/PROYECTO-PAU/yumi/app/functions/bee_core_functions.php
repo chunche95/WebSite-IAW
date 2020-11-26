@@ -1,9 +1,9 @@
 <?php
 
 //////////////////////////////////////////////////
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception AS EmailException;
+use PHPMailer\PHPMailer;
+use PHPMailer\SMTP;
+use PHPMailer\Exception AS EmailException;
 //////////////////////////////////////////////////
 
 /**
@@ -31,7 +31,7 @@ function get_sitename() {
  * @return string
  */
 function get_siteemail() {
-  return 'jslocal@localhost.com';
+  return 'pruebasdemo20@gmail.com';
 }
 
 /**
@@ -256,12 +256,12 @@ function json_encode_utf8($var) {
 }
 
 /**
-Formateo de la hora en tres variantes
-d M, Y,
-m Y,
-d m Y,
-mY,
-d M, Y time
+*Formateo de la hora en tres variantes
+*d M, Y,
+*m Y,
+*d m Y,
+*mY,
+*d M, Y time
 **/
 function format_date($date_string, $type = 'd M, Y') {
   setlocale(LC_ALL, "es_MX.UTF-8", "es_MX", "esp");
@@ -712,7 +712,7 @@ function set_session($k, $v) {
  * @return void
  */
 function send_email($from, $to, $subject, $body, $alt = null, $bcc = null, $reply_to = null, $attachments = []) {
-	$mail     = new PHPMailer(true);
+	$mail     = 0;
 	$template = 'emailTemplate';
 	
 	try {

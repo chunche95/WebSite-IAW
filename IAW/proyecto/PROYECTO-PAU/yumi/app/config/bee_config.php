@@ -5,7 +5,7 @@ define('IS_LOCAL'   , in_array($_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1']));
 define('PREPROS'    , false); // Activar en caso de trabajar el desarrollo en prepros como servidor local
 
 // Definir el uso horario o timezone del sistema
-date_default_timezone_set('America/Mexico_City');
+date_default_timezone_set('Europe/Madrid');
 
 // Lenguaje
 define('SITE_LANG'   , $this->lng);
